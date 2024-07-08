@@ -1,47 +1,48 @@
 # AdventureQuestRPG
-
-This is a console application designed to simulate a battle between a player and a monster in an RPG setting. It includes classes for characters, players, and monsters, along with a battle system to manage the combat.
-
-## Purpose of the Program
-
-The purpose of this program is to provide a simple yet engaging way to simulate RPG battles. Users can create players and monsters with specific attributes and watch them battle it out until one is defeated. This project ensures robust and reliable functionality for managing character attributes and battle mechanics.
-
-## Instructions on How to Run the Program
-
-1. **Clone or download the repository**: Ensure you have the source code on your local machine.
-
-2. **Open the project**:
-   - Use an IDE like Visual Studio or any C# compatible editor to open the project.
-
-3. **Build the project**:
-   - Ensure all dependencies are resolved and build the project.
-
-4. **Run the program**:
-   - Execute the program by running the `AdventureQuestRPG` executable.
-   - Alternatively, you can run the program directly from the IDE by pressing `F5` or selecting the "Run" option.
-
-5. **Simulate Battles**:
-   - The program will automatically simulate a battle between a player and a monster.
-   - Follow the prompts and output messages to see the battle progress and its outcome.
-
-## Additional Information or Notes
-
-- **Creating Characters**:
-  - The `Characters` class serves as a base class for both `Player` and `Monster` classes.
-  - Players and monsters have attributes such as `Name`, `Health`, `AttackPower`, and `Defense`.
-
-- **Battle System**:
-  - The `BattleSystem` class manages the battle mechanics.
-  - Use the `StartBattle` method to initiate a battle between a player and a monster.
-  - The `Attack` method handles the attack logic and updates the health of the target.
-
-- **Error Handling**:
-  - The program includes error handling to manage invalid inputs and other exceptions gracefully.
-  - Exceptions are caught and printed to the console, ensuring the program does not crash unexpectedly.
-
-- **Unit Tests**:
-  - The `AdventureQuestRPGTests` project includes unit tests to verify the functionality of the battle system.
-  - Use the `HealthTest` method to test the health update after an attack.
-  - Use the `WinnerTest` method to ensure the battle system correctly determines the winner.
-
-Enjoy simulating epic battles with the AdventureQuestRPG application!
+AdventureQuestRPG is a text-based role-playing game (RPG) implemented in C#. Players engage in battles against various monsters and bosses, utilizing items to enhance their abilities and survive through multiple levels.
+## Table of Contents
+- [Introduction](#introduction)
+- [Features](#features)
+- [Getting Started](#getting-started)
+- [Usage](#usage)
+- [Testing](#testing)
+- [Contributing](#contributing)
+- [License](#license)
+## Introduction
+AdventureQuestRPG simulates an adventure where players battle monsters and bosses using a turn-based system. It includes character classes, items, and randomized encounters for an engaging gameplay experience.
+## Features
+- **Characters:**
+  - Playable characters: Ibrahim and Raghad, each with unique stats and abilities.
+  - Non-playable characters (NPCs): Various monsters like Giant Spiders, Goblins, Ghosts, Dragons, and the formidable boss, Lucifer.
+- **Battle System:**
+  - Turn-based combat between players and monsters.
+  - Dynamic calculation of damage based on attack power and defense stats.
+  - Random item drops upon defeating enemies.
+- **Inventory System:**
+  - Manage and use items like swords (increase attack power), armor (increase defense), and vitality items (restore health).
+## Getting Started
+To run AdventureQuestRPG on your local machine, follow these steps:
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/your-username/AdventureQuestRPG.git
+   cd AdventureQuestRPG
+2. **Compile and run:
+Open the solution in Visual Studio or compile directly using .NET CLI:
+dotnet build
+dotnet run
+## Usage
+Initial Setup:
+Choose a map and navigate through different levels by interacting with prompts.
+Use items before battles to enhance character stats.
+Battle Mechanics:
+Engage in turn-based combat against monsters and bosses.
+Monitor health, attack power, and defense during battles.
+Item Management:
+View inventory status and decide when to use items based on battle conditions.
+## Testing
+AdventureQuestRPG includes unit tests to ensure functionality and reliability. To run tests:
+dotnet test
+## Contributing
+Contributions are welcome! Fork the repository and submit a pull request with your enhancements. Make sure to follow the project's coding conventions and include relevant test cases for new features.
+## License
+This project is licensed under the MIT License - see the LICENSE file for details.
