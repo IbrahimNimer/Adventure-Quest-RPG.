@@ -6,7 +6,11 @@
         {
             try
             {
+
                 Adventure.Game();
+
+
+
             }
             catch (FormatException e)
             {
@@ -18,7 +22,10 @@
             }
             finally
             {
+
                 Console.WriteLine("Match End !!");
+
+
             }
         }
     }
