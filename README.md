@@ -24,7 +24,7 @@ AdventureQuestRPG simulates an adventure where players battle monsters and bosse
 To run AdventureQuestRPG on your local machine, follow these steps:
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/your-username/AdventureQuestRPG.git
+   git clone https://github.com/IbrahimNimer/AdventureQuestRPG.git
    cd AdventureQuestRPG
 2. **Compile and run:
 Open the solution in Visual Studio or compile directly using .NET CLI:
